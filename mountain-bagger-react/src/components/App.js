@@ -17,12 +17,12 @@ const App = () => {
       <Route
         exact
         path="/login"
-        render={Login}
+        component={Login}
       />
       <Route
         exact
         path="/register"
-        render={Register}
+        component={Register}
       />
       <Route
         exact
