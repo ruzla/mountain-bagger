@@ -28,9 +28,9 @@ class Register extends React.Component {
     if (password !== confirmPassword) {
       alert("Passwords don't match");
     } else if (email !== confirmEmail) {
-      alert('Email does not match')
+      alert('Email does not match');
     } else {
-      axios.post('', {
+      axios.post('http://127.0.0.1:3030/user', {
         firstName: this.state.firstName,
         lastName: this.state.lastName,
         email: this.state.email,
